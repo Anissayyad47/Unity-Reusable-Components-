@@ -59,13 +59,13 @@ public class GameManager : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0f;
-        CurrentState = GameState.Paused;
+        SetState(GameState.Paused);
     }
 
     public void ResumeGame()
     {
         Time.timeScale = 1f;
-        CurrentState = GameState.Playing;
+        SetState(GameState.Playing);
     }
 
     public void GameOver()
