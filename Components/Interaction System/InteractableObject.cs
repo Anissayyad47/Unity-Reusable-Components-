@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Comp_Interaction : MonoBehaviour, IInteractable
+public class InteractableObject : MonoBehaviour, IInteractable
 {
     [Header("UI Reference")]
     [SerializeField] private GameObject UI_Interact;
